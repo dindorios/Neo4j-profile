@@ -1,4 +1,4 @@
-# Neo4j-profile
+# Neo4j-profile - Projeto Grafos de um Serviço de Streaming
 Projetos feito no Neo4j - Banco de dados por Grafos
 
 # 🚀 Desafio DIO - Perfil de Destaque com Neo4j
