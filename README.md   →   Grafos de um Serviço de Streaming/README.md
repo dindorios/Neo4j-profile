@@ -17,5 +17,5 @@ A proposta é criar um repositório profissional que demonstre habilidades prát
 
 ---
 
-## 🗂️ Estrutura do Repositório
+
 
