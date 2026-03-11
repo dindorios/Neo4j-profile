@@ -10,7 +10,7 @@ A proposta é criar um repositório profissional que demonstre habilidades prát
 ---
 
 ## 🎯 Objetivos
-- Construir um modelo de grafo representando [explique o domínio escolhido, ex: rede social, catálogo de filmes, etc].
+- Construir um modelo de grafo representando Modelagem de Dados em Grafos de um Serviço de Streaming.
 - Carregar dados reais ou simulados no Neo4j.
 - Criar queries de negócio que mostrem insights relevantes.
 - Documentar todo o processo de forma clara e organizada.
