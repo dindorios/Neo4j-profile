@@ -1,1 +1,70 @@
+# Criação #
+CREATE (matrix:Film {titulo:"Matrix", ano:1999, duracao:136, idioma:"Inglês"})
+<-[:AVALIOU {nota:5}]-(:User {nome:"Diego", idade:41, cidade:"São Paulo"})
+-[:ASSISTIU]->(matrix)
+-[:ATUOU]->(:Actor {nome:"Keanu Reeves", idade:56, nacionalidade:"Canadense"}),
+(:Genre {nome:"Ficção científica", popularidade:9})<-[:PERTENCE_A]-(matrix)
+-[:DIRIGIDO_POR]->(:Director {nome:"Lana Wachowski", idade:56, nacionalidade:"Americana"}),
 
+(lobo:Film {titulo:"O Lobo de Wall Street", ano:2013, duracao:180, idioma:"Inglês"})
+<-[:AVALIOU {nota:5}]-(:User {nome:"João", idade:54, cidade:"Maceió"})
+-[:ASSISTIU]->(lobo)
+-[:ATUOU]->(:Actor {nome:"Leonardo DiCaprio", idade:56, nacionalidade:"Americano"}),
+(:Genre {nome:"Comédia/Drama", popularidade:8})<-[:PERTENCE_A]-(lobo)
+-[:DIRIGIDO_POR]->(:Director {nome:"Martin Scorsese", idade:83, nacionalidade:"Americano"}),
+
+(guerreiras:Film {titulo:"Guerreiras do K-Pop", ano:2024, duracao:120, idioma:"Coreano"})
+<-[:AVALIOU {nota:5}]-(:User {nome:"Anna", idade:39, cidade:"Rio de Janeiro"})
+-[:ASSISTIU]->(guerreiras)
+-[:ATUOU]->(:Actor {nome:"Kim Ji-woo", idade:25, nacionalidade:"Sul-coreana"}),
+(:Genre {nome:"Musical", popularidade:8})<-[:PERTENCE_A]-(guerreiras)
+-[:DIRIGIDO_POR]->(:Director {nome:"Park Min-ho", idade:48, nacionalidade:"Sul-coreano"}),
+
+(novica:Film {titulo:"A Noviça Rebelde", ano:1965, duracao:174, idioma:"Inglês"})
+<-[:AVALIOU {nota:4}]-(:User {nome:"Christina", idade:68, cidade:"Rio de Janeiro"})
+-[:ASSISTIU]->(novica)
+-[:ATUOU]->(:Actor {nome:"Julie Andrews", idade:90, nacionalidade:"Britânica"}),
+(:Genre {nome:"Musical", popularidade:9})<-[:PERTENCE_A]-(novica)
+-[:DIRIGIDO_POR]->(:Director {nome:"Robert Wise", idade:91, nacionalidade:"Americano"}),
+
+(blues:Film {titulo:"The Blues Brothers", ano:1980, duracao:133, idioma:"Inglês"})
+<-[:AVALIOU {nota:5}]-(:User {nome:"Solange", idade:68, cidade:"Rio de Janeiro"})
+-[:ASSISTIU]->(blues)
+-[:ATUOU]->(:Actor {nome:"John Belushi", idade:33, nacionalidade:"Americano"}),
+(:Genre {nome:"Musical", popularidade:8})<-[:PERTENCE_A]-(blues)
+-[:DIRIGIDO_POR]->(:Director {nome:"John Landis", idade:75, nacionalidade:"Americano"}),
+
+(futuro:Film {titulo:"De Volta para o Futuro", ano:1985, duracao:116, idioma:"Inglês"})
+<-[:AVALIOU {nota:5}]-(:User {nome:"Deivid", idade:50, cidade:"Belo Horizonte"})
+-[:ASSISTIU]->(futuro)
+-[:ATUOU]->(:Actor {nome:"Michael J. Fox", idade:64, nacionalidade:"Canadense"}),
+(:Genre {nome:"Ficção científica", popularidade:9})<-[:PERTENCE_A]-(futuro)
+-[:DIRIGIDO_POR]->(:Director {nome:"Robert Zemeckis", idade:74, nacionalidade:"Americano"}),
+
+(cats:Film {titulo:"Cats", ano:2019, duracao:110, idioma:"Inglês"})
+<-[:AVALIOU {nota:2}]-(:User {nome:"Durval", idade:18, cidade:"Goiânia"})
+-[:ASSISTIU]->(cats)
+-[:ATUOU]->(:Actor {nome:"Francesca Hayward", idade:34, nacionalidade:"Britânica"}),
+(:Genre {nome:"Musical", popularidade:7})<-[:PERTENCE_A]-(cats)
+-[:DIRIGIDO_POR]->(:Director {nome:"Tom Hooper", idade:54, nacionalidade:"Britânico"}),
+
+(corra:Film {titulo:"Corra que a Polícia Vem Aí", ano:1988, duracao:85, idioma:"Inglês"})
+<-[:AVALIOU {nota:4}]-(:User {nome:"Adriano", idade:60, cidade:"Monte Alegre"})
+-[:ASSISTIU]->(corra)
+-[:ATUOU]->(:Actor {nome:"Leslie Nielsen", idade:85, nacionalidade:"Canadense"}),
+(:Genre {nome:"Comédia", popularidade:8})<-[:PERTENCE_A]-(corra)
+-[:DIRIGIDO_POR]->(:Director {nome:"David Zucker", idade:78, nacionalidade:"Americano"}),
+
+(jurassic:Film {titulo:"Jurassic Park", ano:1993, duracao:127, idioma:"Inglês"})
+<-[:AVALIOU {nota:5}]-(:User {nome:"Roberta", idade:40, cidade:"Pouso Alto"})
+-[:ASSISTIU]->(jurassic)
+-[:ATUOU]->(:Actor {nome:"Sam Neill", idade:78, nacionalidade:"Neozelandês"}),
+(:Genre {nome:"Aventura/Ficção Científica", popularidade:10})<-[:PERTENCE_A]-(jurassic)
+-[:DIRIGIDO_POR]->(:Director {nome:"Steven Spielberg", idade:79, nacionalidade:"Americano"}),
+
+(parasita:Film {titulo:"Parasita", ano:2019, duracao:132, idioma:"Coreano"})
+<-[:AVALIOU {nota:4}]-(:User {nome:"Roberto", idade:48, cidade:"Jaboticabal"})
+-[:ASSISTIU]->(parasita)
+-[:ATUOU]->(:Actor {nome:"Song Kang-ho", idade:59, nacionalidade:"Sul-coreano"}),
+(:Genre {nome:"Drama/Thriller", popularidade:10})<-[:PERTENCE_A]-(parasita)
+-[:DIRIGIDO_POR]->(:Director {nome:"Bong Joon-ho", idade:56, nacionalidade:"Sul-coreano"});
